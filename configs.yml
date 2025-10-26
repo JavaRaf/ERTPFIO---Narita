@@ -1,0 +1,84 @@
+github:
+  username: JavaRaf                         # Your GitHub username (format: string)
+  repo: TOP-ROAD-FRAMES                     # The name of the repo where the episodes which the frames are stored
+  branch: master                            # The branch of the repo where the episodes which the frames are stored
+  # Example: 
+  # javaRafa/                               # username
+  # └── frames/                             # repo name
+  #     └── 01/                             # episode folder name (name of the episode folder) (ex: 01, 02, 03, etc.)
+  #         ├── frame_0001.jpg
+  #         ├── frame_0002.jpg
+  #         └── frame_0003.jpg
+
+
+# progress
+in_progress:
+  season: 1
+  episode: 1
+  frame: 0
+
+
+
+episodes:
+  1:
+    title: The Beginning of a Dream           # title for the episode (optional)
+    image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
+    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    album_id: # album id for repost frames in a facebook album (optional)       
+  2:
+    title: The Stage of Glory           # title for the episode (optional)
+    image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
+    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    album_id:        # album id for repost frames in a facebook album (optional)
+  3:
+    title: The Reason to Run          # title for the episode (optional)
+    image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
+    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    album_id:        # album id for repost frames in a facebook album (optional)
+  4:
+    title: One Mind          # title for the episode (optional)
+    image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
+    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    album_id:        # album id for repost frames in a facebook album (optional)
+
+
+
+posting:
+  fph: 15                                    # Frames posted per cicle (format: integer)                            
+  posting_interval: 2                       # Interval between posts in minutes (recomended: 2 or more)(format: integer)
+  posting_subtitles: true                   # If true, the subtitles will be posted on comments (format: boolean)
+  reposting_in_album: true                  # If true, the frame will be reposted in an album (format: boolean)
+
+  random_crop:                             # Random crop settings (optional)
+    enabled: true                          # If true, the image will be cropped randomly and posted on comments (default: true) (format: boolean)
+    min_x: 200                             # Minimum crop width (default: 200) (format: integer)
+    min_y: 600                             # Minimum crop height (default: 600) (format: integer)
+
+
+
+
+
+
+
+
+
+# placeholders:
+#   {season_number} The season number
+#   {episode_number} The episode number
+#   {frame_number} The frame number
+#   {max_frames} The maximum frames in the episode
+#   {img_fps} The frames per second of the image/video
+#   {fph} The frames per hour
+
+#   {timestamp} The timestamp of the frame
+#   {subtitles} The subtitles of the frame
+#   {episode_title} The title of the episode
+#   {posting_interval} The interval between posts in minutes (default: 2) (alterable in the configs.yml file)
+#   {execution_interval} The interval between execution (default: 2 hours) (alterable in the workflow file)
+post_msg: |
+  {episode_title} - Episode {episode_number}, Frame {frame_number} out of {max_frames}
+  timestamp: {timestamp}
+
+bio_msg: |
+  Posting {fph} frames every {execution_interval} hours
+
