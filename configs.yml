@@ -23,22 +23,22 @@ episodes:
   1:
     title: The Beginning of a Dream           # title for the episode (optional)
     image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
-    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    max_frames: 5119   # maximum frames in the episode (exigid to know when to stop posting)
     album_id: # album id for repost frames in a facebook album (optional)       
   2:
     title: The Stage of Glory           # title for the episode (optional)
     image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
-    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    max_frames: 5433   # maximum frames in the episode (exigid to know when to stop posting)
     album_id:        # album id for repost frames in a facebook album (optional)
   3:
     title: The Reason to Run          # title for the episode (optional)
     image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
-    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    max_frames: 5119   # maximum frames in the episode (exigid to know when to stop posting)
     album_id:        # album id for repost frames in a facebook album (optional)
   4:
     title: One Mind          # title for the episode (optional)
     image_fps: 3.5   # frames per second of the image/video (necessary to know when to stop posting)
-    max_frames: 15   # maximum frames in the episode (exigid to know when to stop posting)
+    max_frames: 5734   # maximum frames in the episode (exigid to know when to stop posting)
     album_id:        # album id for repost frames in a facebook album (optional)
 
 
