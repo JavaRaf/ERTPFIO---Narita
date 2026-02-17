@@ -70,3 +70,22 @@ Traceback (most recent call last):
     raise mapped_exc(message) from exc
 httpx.ConnectTimeout: _ssl.c:1015: The handshake operation timed out
 main | main | line 84 | ERROR | 2025-12-26 04:26:05,072 | Error while downloading frame 4021 from episode 02.
+frame_utils | get_frame | line 205 | ERROR | 2026-02-17 20:37:15,461 | HTTP error while downloading frame 2812 from episode 4: 503 - 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 between bytes timeout</title>
+  </head>
+  <body>
+    <h1>Error 503 between bytes timeout</h1>
+    <p>between bytes timeout</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-chi-kigq8000051-CHI 1771360635 1528392732</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+NoneType: None
+main | main | line 84 | ERROR | 2026-02-17 20:37:15,461 | Error while downloading frame 2812 from episode 04.
